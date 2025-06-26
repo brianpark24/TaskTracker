@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+<style>
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+</style>
 <head>
     <meta charset="utf-8" />
     <title>Task Tracker</title>
@@ -16,11 +22,11 @@
     </div>
 </form>
 <hr>
-<table>
+<table id="taskTable" style="width:100%"> 
     <tr>
-        <td>Completed</td>
-        <td>Tasks</td>
-        <td></td>
+        <th>Completed</th>
+        <th>Tasks</th>
+        <th></th>
     </tr>
 </table>
 <hr>
