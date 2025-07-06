@@ -1,7 +1,8 @@
 const myTasks = [];
 
 function addTask() {
-    let newTask = document.getElementById("task").innerHTML;
+    let newTask = document.getElementById("task");
+    console.log("adding Task")
     myTasks.push(newTask);
     createTableRow(myTasks);
     saveTasks(myTasks);
