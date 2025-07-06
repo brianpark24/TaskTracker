@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <style>
-table, th, td {
-    border:1px solid black;
-    border-collapse: collapse;
+    table, th {
+        border:1px solid black;
+        border-collapse: collapse;
 }
 </style>
 <head>
@@ -18,15 +18,15 @@ table, th, td {
         <input type="text" id="task" name="task"><br>
     </div>
     <div>
-        <input type="submit" value="Send" >
+        <input type="submit" value="Submit" oninput="addTask()">
     </div>
 </form>
 <hr>
 <table id="taskTable" style="width:100%"> 
-    <tr>
-        <th>Completed</th>
-        <th>Tasks</th>
-        <th></th>
+    <tr id="tableHead">
+        <th scope="col">Completed</th>
+        <th scope="col">Tasks</th>
+        <th scope="col">Delete</th>
     </tr>
 </table>
 <hr>
